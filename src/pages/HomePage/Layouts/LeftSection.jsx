@@ -14,7 +14,7 @@ const LeftSection = () => {
           I am <FlipWords words={words} />
         </div>
         <div
-          // className="py-4 text-center md:text-left"
+          className="py-4 text-center md:text-left"
           ref={containerRef}
           style={{ position: "relative" }}
         >
