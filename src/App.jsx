@@ -1,4 +1,5 @@
 import { Navbar } from "./components/Navbar";
+import SkillsModel from "./components/SkillsModel";
 import { BackgroundBeamsWithCollision } from "./components/ui/background-beam";
 import AboutPage from "./pages/About";
 import ContactUs1 from "./pages/Contact";

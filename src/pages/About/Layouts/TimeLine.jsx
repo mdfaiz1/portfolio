@@ -96,26 +96,28 @@ export function TimelinePage() {
             Internship Completion (March)
           </h1>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Completed internship with hands-on project experience and
-              mentorship.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Strengthened debugging, deployment, and responsive UI/UX
-              skills.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Focused on:
-              <span className="ml-2 before:content-['•'] before:mr-1">
-                Writing clean, maintainable code
-              </span>
-              <span className="ml-2 before:content-['•'] before:mr-1">
-                Optimizing performance
-              </span>
-              <span className="ml-2 before:content-['•'] before:mr-1">
-                Preparing for interviews and job roles in full-stack development
-              </span>
-            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300"></div>
+
+            <ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
+              <li>
+                Completed internship with hands-on project experience and
+                mentorship.
+              </li>
+              <li>
+                Strengthened debugging, deployment, and responsive UI/UX skills.
+              </li>
+              <li>
+                Focused on:
+                <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
+                  <li>Writing clean, maintainable code</li>
+                  <li>Optimizing performance</li>
+                  <li>
+                    Preparing for interviews and job roles in full-stack
+                    development
+                  </li>
+                </ul>
+              </li>
+            </ol>
           </div>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
@@ -158,31 +160,32 @@ export function TimelinePage() {
             Graduation, Internship & MCA Start
           </h1>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Successfully completed BCA.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Enrolled in Master of Computer Applications (MCA) to further
-              advance IT skills.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Started an internship in mid-2024, focusing on:
-              <span className="ml-2 before:content-['•'] before:mr-1">
-                Full-stack web development using MERN
-              </span>
-              <span className="ml-2 before:content-['•'] before:mr-1">
-                Client communication and requirement gathering
-              </span>
-              <span className="ml-2 before:content-['•'] before:mr-1">
-                Working on real-time projects with deployment and bug fixing
-              </span>
-              <span className="ml-2 before:content-['•'] before:mr-1">
-                Tools used: VS Code, Postman, MongoDB Compass, Render/Netlify
-              </span>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Started portfolio and GitHub project showcase.
-            </div>
+            {/*  */}
+
+            <ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
+              <li>Successfully completed BCA.</li>
+              <li>
+                Enrolled in Master of Computer Applications (MCA) to further
+                advance IT skills.
+              </li>
+              <li>
+                Started an internship in mid-2024, focusing on:
+                <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
+                  <li>Full-stack web development using MERN</li>
+                  <li>Client communication and requirement gathering</li>
+                  <li>
+                    Working on real-time projects with deployment and bug fixing
+                  </li>
+                  <li>
+                    Tools used: VS Code, Postman, MongoDB Compass,
+                    Render/Netlify
+                  </li>
+                </ul>
+              </li>
+              <li>Started portfolio and GitHub project showcase.</li>
+            </ol>
+
+            {/*  */}
           </div>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
@@ -225,26 +228,26 @@ export function TimelinePage() {
             Diving into Full Stack Development
           </h1>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Learned and started building projects with the MERN Stack:
-              MongoDB, Express.js, React.js, Node.js.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Built personal projects like:{" "}
-              <NavLink to="/projects" className="text-yellow-500">
-                My Projects
-              </NavLink>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Improved understanding of REST APIs, JSON, and AJAX.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Practiced DSA on platforms like LeetCode and HackerRank. MySQL.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Developed team collaboration skills through academic group
-              projects.
-            </div>
+            <ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
+              <li>
+                Learned and started building projects with the MERN Stack:
+                MongoDB, Express.js, React.js, Node.js.
+              </li>
+              <li>
+                Built personal projects like:{" "}
+                <NavLink to="/projects" className="text-yellow-500">
+                  My Projects
+                </NavLink>
+              </li>
+              <li>Improved understanding of REST APIs, JSON, and AJAX.</li>
+              <li>
+                Practiced DSA on platforms like LeetCode and HackerRank. MySQL.
+              </li>
+              <li>
+                Developed team collaboration skills through academic group
+                projects.
+              </li>
+            </ol>
           </div>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
@@ -287,24 +290,22 @@ export function TimelinePage() {
             Core Programming & Development Begins
           </h1>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Learned C, C++, and Java for understanding programming
-              fundamentals and OOPs.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Explored HTML, CSS, and JavaScript to build static and
-              interactive web pages.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Worked on basic DSA concepts (arrays, strings, sorting).
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Developed small applications and mini-projects using PHP and
-              MySQL.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Started using Git and GitHub for version control.
-            </div>
+            <ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
+              <li>
+                Learned C, C++, and Java for understanding programming
+                fundamentals and OOPs.
+              </li>
+              <li>
+                Explored HTML, CSS, and JavaScript to build static and
+                interactive web pages.
+              </li>
+              <li>Worked on basic DSA concepts (arrays, strings, sorting).</li>
+              <li>
+                Developed small applications and mini-projects using PHP and
+                MySQL.
+              </li>
+              <li>Started using Git and GitHub for version control.</li>
+            </ol>
           </div>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
@@ -347,23 +348,19 @@ export function TimelinePage() {
             12th Grade Completed & Enrolled in BCA
           </h1>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Completed senior secondary education with a focus on
-              mathematics and computer science.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Took admission in Bachelor of Computer Applications (BCA).
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Learned basics of computer systems, networking, and information
-              technology.
-            </div>
-            {/* <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Salman Bhai Fan Club registrations open
-            </div> */}
+            <ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
+              <li>
+                Completed senior secondary education with a focus on mathematics
+                and computer science.
+              </li>
+              <li>
+                Took admission in Bachelor of Computer Applications (BCA).
+              </li>
+              <li>
+                Learned basics of computer systems, networking, and information
+                technology.
+              </li>
+            </ol>
           </div>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
@@ -406,22 +403,16 @@ export function TimelinePage() {
             10th Grade Completed
           </h1>
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Built a curiosity for computers and digital systems.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Started experimenting with basic software, internet tools, and
-              MS Office.
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Developed an early interest in technology and logical thinking.
-            </div>
-            {/* <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Salman Bhai Fan Club registrations open
-            </div> */}
+            <ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
+              <li>Built a curiosity for computers and digital systems.</li>
+              <li>
+                Started experimenting with basic software, internet tools, and
+                MS Office.
+              </li>
+              <li>
+                Developed an early interest in technology and logical thinking.
+              </li>
+            </ol>
           </div>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
