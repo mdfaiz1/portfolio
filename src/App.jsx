@@ -5,6 +5,7 @@ import AboutPage from "./pages/About";
 import ContactUs1 from "./pages/Contact";
 import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactUs1 />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<Projects />} />
             {/* Add other routes here */}
           </Routes>
         </div>

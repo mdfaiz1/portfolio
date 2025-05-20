@@ -1,11 +1,9 @@
 import React from "react";
 import { FlipWords } from "../../../components/ui/flip-words";
 import { useRef } from "react";
-import VariableProximity from "../../../components/ui/variable-proximity";
 import SkillsModel from "../../../components/SkillsModel";
 
 const LeftSection = () => {
-  const containerRef = useRef(null);
   const words = ["Md Faiz Alam", "Devloper"];
   return (
     <div className="">
@@ -13,22 +11,11 @@ const LeftSection = () => {
         <div className="text-4xl text-center md:text-left font-bold text-[#7FC8A9] pb-2">
           I am <FlipWords words={words} />
         </div>
-        <div
-          className="py-4 text-center md:text-left"
-          ref={containerRef}
-          style={{ position: "relative" }}
-        >
-          <VariableProximity
-            label={
-              "sdafjhdsgfjdhsagfjshafgdhjsafgdsjhafgdsajhfgjhgchj jhd gfjdhs jdsg jdhfg dhsg faksjfga jf gdsjkdsjgf sdakfgdsa kdsjgdskfgdsk fdsgjkh"
-            }
-            className={"variable-proximity-demo"}
-            fromFontVariationSettings="'wght' 400, 'opsz' 9"
-            toFontVariationSettings="'wght' 1000, 'opsz' 40"
-            containerRef={containerRef}
-            radius={100}
-            falloff="linear"
-          />
+        <div className="py-4 text-center md:text-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+          veritatis deserunt ipsa numquam ratione? Mollitia ullam voluptas
+          soluta qui atque unde dolorem accusamus delectus nam magnam, beatae
+          adipisci culpa vel!
         </div>
         <div className="flex gap-2 justify-center md:justify-start">
           <button class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-500 rounded-md group">
