@@ -1,8 +1,6 @@
 import * as React from "react";
-import Button from "@mui/joy/Button";
 import Modal from "@mui/joy/Modal";
 import ModalClose from "@mui/joy/ModalClose";
-import Typography from "@mui/joy/Typography";
 import Sheet from "@mui/joy/Sheet";
 import GlassIcons from "../ui/glassIcons";
 
@@ -18,7 +16,7 @@ const SkillsModel = () => {
 
   const [open, setOpen] = React.useState(false);
   return (
-    <React.Fragment>
+    <>
       <button
         class="border text-gray-50  duration-300 relative group cursor-pointer   overflow-hidden h-12 w-35 rounded-md bg-neutral-800 p-2  font-extrabold hover:bg-sky-700"
         variant="outlined"
@@ -55,25 +53,9 @@ const SkillsModel = () => {
           <div className="px-5">
             <GlassIcons items={items} className="custom-class" />
           </div>
-          {/* <Typography
-            component="h1"
-            id="modal-title"
-            level="h3"
-            textColor="inherit"
-            sx={{ fontWeight: "lg", mb: 1 }}
-          >
-            This is the modal title Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Officia alias ipsam quidem in neque modi deserunt?
-            Ut in doloremque voluptate, qui minus, necessitatibus magnam
-            quibusdam beatae quasi ipsa cum illo.
-          </Typography>
-          <Typography id="modal-desc" textColor="text.tertiary">
-            Make sure to use <code>aria-labelledby</code> on the modal dialog
-            with an optional <code>aria-describedby</code> attribute.
-          </Typography> */}
         </Sheet>
       </Modal>
-    </React.Fragment>
+    </>
   );
 };
 
