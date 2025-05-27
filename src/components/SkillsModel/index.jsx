@@ -52,7 +52,7 @@ const SkillsModel = () => {
         >
           <ModalClose variant="plain" sx={{ m: 0.5 }} />
           <div className="px-5">
-            <GlassIcons items={items} className="custom-class" />
+            <GlassIcons items={items} className="custom-className" />
           </div>
         </Sheet>
       </Modal>
