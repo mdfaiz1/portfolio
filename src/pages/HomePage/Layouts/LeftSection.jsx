@@ -50,8 +50,7 @@ const LeftSection = () => {
             <div class="absolute inset-0 rounded-lg opacity-50 group-hover:opacity-80 transition-opacity duration-300 bg-gradient-to-tl from-amber-200/40 via-transparent to-transparent"></div>
             <div class="absolute -left-full top-0 h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-[200%] transition-transform duration-700 ease-out"></div>
           </button>
-
-          <SkillsModel />
+          {/* <SkillsModel /> */} hello
         </div>
       </div>
     </div>
