@@ -1,8 +1,8 @@
-import * as React from "react";
+import React from "react";
 import Modal from "@mui/joy/Modal";
 import ModalClose from "@mui/joy/ModalClose";
 import Sheet from "@mui/joy/Sheet";
-import { GlassIcons } from "../ui/glassIcons";
+import TiltedCard from "../ui/TiltedCard";
 
 const SkillsModel = () => {
   const items = [
@@ -51,8 +51,76 @@ const SkillsModel = () => {
           }}
         >
           <ModalClose variant="plain" sx={{ m: 0.5 }} />
-          <div className="px-5">
-            <GlassIcons items={items} className="custom-class" />
+          <div className="px-5 grid gap-[2em] grid-cols-2 md:grid-cols-3 mx-auto py-[3em] overflow-visible">
+            {/* <GlassIcons items={items} className="custom-class" /> */}
+            <TiltedCard
+              imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+              altText="Kendrick Lamar - GNX Album Cover"
+              captionText="Kendrick Lamar - GNX"
+              containerHeight="100px"
+              containerWidth="100px"
+              imageHeight="100px"
+              imageWidth="100px"
+              rotateAmplitude={12}
+              scaleOnHover={1.2}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={true}
+              overlayContent={
+                <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
+              }
+            />
+            <TiltedCard
+              imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+              altText="Kendrick Lamar - GNX Album Cover"
+              captionText="Kendrick Lamar - GNX"
+              containerHeight="100px"
+              containerWidth="100px"
+              imageHeight="100px"
+              imageWidth="100px"
+              rotateAmplitude={12}
+              scaleOnHover={1.2}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={true}
+              overlayContent={
+                <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
+              }
+            />
+            <TiltedCard
+              imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+              altText="Kendrick Lamar - GNX Album Cover"
+              captionText="Kendrick Lamar - GNX"
+              containerHeight="100px"
+              containerWidth="100px"
+              imageHeight="100px"
+              imageWidth="100px"
+              rotateAmplitude={12}
+              scaleOnHover={1.2}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={true}
+              overlayContent={
+                <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
+              }
+            />
+            <TiltedCard
+              imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+              altText="Kendrick Lamar - GNX Album Cover"
+              captionText="Kendrick Lamar - GNX"
+              containerHeight="100px"
+              containerWidth="100px"
+              imageHeight="100px"
+              imageWidth="100px"
+              rotateAmplitude={12}
+              scaleOnHover={1.2}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={true}
+              overlayContent={
+                <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
+              }
+            />
           </div>
         </Sheet>
       </Modal>
