@@ -1,5 +1,3 @@
-import React from "react";
-
 const gradientMapping = {
   blue: "linear-gradient(hsl(223, 90%, 50%), hsl(208, 90%, 50%))",
   purple: "linear-gradient(hsl(283, 90%, 50%), hsl(268, 90%, 50%))",
@@ -9,7 +7,7 @@ const gradientMapping = {
   green: "linear-gradient(hsl(123, 90%, 40%), hsl(108, 90%, 40%))",
 };
 
-const GlassIcons = ({ items = [], className = "" }) => {
+export const GlassIcons = ({ items, className }) => {
   const getBackgroundStyle = color => {
     if (gradientMapping[color]) {
       return { background: gradientMapping[color] };
@@ -17,15 +15,15 @@ const GlassIcons = ({ items = [], className = "" }) => {
     return { background: color };
   };
 
-  if (!Array.isArray(items) || items.length === 0) return null;
-
   return (
     <div
-      className={`grid gap-[5em] grid-cols-2 md:grid-cols-3 mx-auto py-[3em] overflow-visible text-white ${className}`}
+      className={`grid gap-[5em] grid-cols-2 md:grid-cols-3 mx-auto py-[3em] overflow-visible ${
+        className || ""
+      }`}
     >
       {items.map((item, index) => (
         <button
-          key={item.id || index}
+          key={index}
           type="button"
           aria-label={item.label}
           className={`relative bg-transparent outline-none w-[4.5em] h-[4.5em] [perspective:24em] [transform-style:preserve-3d] [-webkit-tap-highlight-color:transparent] group ${
@@ -66,4 +64,4 @@ const GlassIcons = ({ items = [], className = "" }) => {
   );
 };
 
-export default GlassIcons;
+// export {GlassIcons};

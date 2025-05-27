@@ -2,17 +2,17 @@ import * as React from "react";
 import Modal from "@mui/joy/Modal";
 import ModalClose from "@mui/joy/ModalClose";
 import Sheet from "@mui/joy/Sheet";
-// import GlassIcons from "../ui/glassIcons";
+import { GlassIcons } from "../ui/glassIcons";
 
 const SkillsModel = () => {
-  // const items = [
-  //   { icon: "<FiFileText />", color: "blue", label: "Files" },
-  //   { icon: "<FiBook />", color: "purple", label: "Books" },
-  //   { icon: "<FiHeart />", color: "red", label: "Health" },
-  //   { icon: "<FiCloud />", color: "indigo", label: "Weather" },
-  //   { icon: "<FiEdit />", color: "orange", label: "Notes" },
-  //   { icon: "<FiBarChart2 />", color: "green", label: "Stats" },
-  // ];
+  const items = [
+    { icon: "<FiFileText />", color: "blue", label: "Files" },
+    { icon: "<FiBook />", color: "purple", label: "Books" },
+    { icon: "<FiHeart />", color: "red", label: "Health" },
+    { icon: "<FiCloud />", color: "indigo", label: "Weather" },
+    { icon: "<FiEdit />", color: "orange", label: "Notes" },
+    { icon: "<FiBarChart2 />", color: "green", label: "Stats" },
+  ];
   const [open, setOpen] = React.useState(false);
   return (
     <>
@@ -51,10 +51,9 @@ const SkillsModel = () => {
           }}
         >
           <ModalClose variant="plain" sx={{ m: 0.5 }} />
-          {/* <div className="px-5">
-            <GlassIcons items={items} className="custom-className" />
-          </div> */}
-          hgfcxjvhgfjdsgfzhjdgfjh
+          <div className="px-5">
+            <GlassIcons items={items} className="custom-class" />
+          </div>
         </Sheet>
       </Modal>
     </>
