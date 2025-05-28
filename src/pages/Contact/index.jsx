@@ -16,7 +16,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="md:pr-12 "
+      className="md:pr-12  w-full"
       noValidate
       validated={validated}
       onSubmit={handleSubmit}
@@ -63,7 +63,7 @@ const ContactUs1 = () => {
           <div className="col-span-12 lg:col-span-6 mb-4 lg:mb-0 md:w-[50%]">
             <div className="h-full flex items-center">
               <img
-                src="https://cdn.easyfrontend.com/pictures/contact/contact_1.png"
+                src="/desktop.png"
                 alt=""
                 className="max-w-full h-auto relative z-[2] rounded-tr-[100px] rounded-br rounded-bl-[100px] mx-auto"
               />

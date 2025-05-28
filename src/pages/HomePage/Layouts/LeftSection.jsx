@@ -2,9 +2,22 @@ import React from "react";
 import { FlipWords } from "../../../components/ui/flip-words";
 import { useRef } from "react";
 import SkillsModel from "../../../components/SkillsModel";
+import BlurText from "../../../components/ui/blurText";
+import { handleResumeDownload } from "../../../utils/resume";
 
 const LeftSection = () => {
-  const words = ["Md Faiz Alam", "Devloper"];
+  // const handleDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.href = "/resume.pdf";
+  //   link.download = "Md_Faiz.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+  // const handleAnimationComplete = () => {
+  //   console.log("Animation completed!");
+  // };
+  const words = ["Md Faiz Alam", "Software Devloper"];
   return (
     <div className="">
       <div className="p-5">
@@ -12,13 +25,20 @@ const LeftSection = () => {
           I am <FlipWords words={words} />
         </div>
         <div className="py-4 text-center md:text-left">
-          Passionate about building impactful web experiences, I specialize in
-          crafting modern, user-friendly applications using cutting-edge
-          technologies. Always eager to learn, solve problems, and turn ideas
-          into reality through clean and efficient code.
+          <BlurText
+            text="Passionate about building impactful web experiences, I specialize in crafting modern, user-friendly applications using cutting-edge technologies. Always eager to learn, solve problems, and turn ideas into reality through clean and efficient code."
+            delay={150}
+            animateBy="letters" // "letters" or "words"
+            direction="bottom" // "top" or "bottom"
+            threshold={0.2}
+            // onAnimationComplete={handleAnimationComplete}
+          />
         </div>
         <div className="flex gap-2 justify-center md:justify-start">
-          <button class="group relative px-6 py-1 rounded-lg bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 text-black font-bold tracking-wider uppercase text-sm hover:from-yellow-500 hover:via-amber-600 hover:to-yellow-700 transform hover:rotate-1 transition-all duration-300 ease-out shadow-[0_0_20px_rgba(251,191,36,0.5)] hover:shadow-[0_0_30px_rgba(251,191,36,0.7)] active:scale-90 overflow-hidden before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-amber-400/50 before:transition-all before:duration-300 hover:before:border-amber-300 hover:before:scale-105">
+          <button
+            onClick={handleResumeDownload}
+            class="group relative px-6 py-1 rounded-lg bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 text-black font-bold tracking-wider uppercase text-sm hover:from-yellow-500 hover:via-amber-600 hover:to-yellow-700 transform hover:rotate-1 transition-all duration-300 ease-out shadow-[0_0_20px_rgba(251,191,36,0.5)] hover:shadow-[0_0_30px_rgba(251,191,36,0.7)] active:scale-90 overflow-hidden before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-amber-400/50 before:transition-all before:duration-300 hover:before:border-amber-300 hover:before:scale-105 cursor-pointer"
+          >
             <span class="flex items-center gap-2 relative z-10 ">
               <svg
                 stroke="currentColor"
